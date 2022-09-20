@@ -266,8 +266,8 @@ li > .current {
 .header-list,
 .button-list,
 .features,
-.business,
-.team,
+.galery__img,
+.team-list,
 .footer-list,
 .button-list,
 .projects {
@@ -289,12 +289,13 @@ li > .current {
   color: var(--font-color-two);
 }
 
-.business-section {
+.section-galery {
   background-color: var(--background-color-two);
   padding-bottom: 94px;
 }
-.customer-title,
-.business-title {
+.section-customers__title,
+.section-galery__title,
+.section-team__title {
   text-transform: capitalize;
   font-weight: 700;
   font-size: 36px;
@@ -304,18 +305,18 @@ li > .current {
   margin-bottom: 50px;
 }
 
-.business,
-.team {
+.galery__img,
+.team-list {
   display: flex;
   gap: 30px;
 }
-.team-section {
+.section-team {
   background-color: var(--background-color-three);
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.team-list {
+.team-card {
   background-color: var(--background-color-two);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 0px 0px 4px 4px;
@@ -325,7 +326,7 @@ li > .current {
   padding: 30px;
 }
 
-.employee-name {
+.team-text__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1;
@@ -334,20 +335,20 @@ li > .current {
   margin-bottom: 10px;
 }
 
-.job-title {
+.team-text__position {
   font-size: 16px;
   line-height: 1.1;
   text-align: center;
   color: var(--font-color-two);
   margin-bottom: 15px;
 }
-.social-box {
+.socials {
   display: flex;
   align-items: center;
   justify-content: center;
     gap:10px;
 }
-.social-link {
+.socials__link {
   display: flex;
 justify-content: center;
 align-items: center;
@@ -361,17 +362,17 @@ align-items: center;
 }
 .footer-social-link:hover,
 .footer-social-link:focus,
-.social-link:hover,
-.social-link:focus {
+.socials__link:hover,
+.socials__link:focus {
 fill: var(--background-color-two);
 background-color: var(--brand-color);
 }
 
-.customer-section {
+.section-customers {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.customer-link {
+.customer-list__link {
   width: 170px;
   height: 92px;
   border-radius: 4px;
@@ -384,8 +385,8 @@ background-color: var(--brand-color);
    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customer-link:hover,
-.customer-link:focus {
+.customer-list__link:hover,
+.customer-list__link:focus {
   fill:var(--brand-color);
   outline: 1px solid var(--brand-color);
 }
